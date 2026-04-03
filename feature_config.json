@@ -1,0 +1,32 @@
+{
+  "model_name": "GNSS Spoofing & Meaconing Detector",
+  "algorithm": "C-SVM with RBF kernel",
+  "C": 7.0,
+  "gamma_psi": 0.05,
+  "n_support_vectors": 235,
+  "cv_accuracy": 0.999752868187149,
+  "test_accuracy": 0.9999176242843609,
+  "manip_recall": 0.9998731849597362,
+  "n_features": 11,
+  "feature_columns": [
+    "lock_time",
+    "cn0",
+    "pseudorange",
+    "doppler",
+    "carrier_phase",
+    "mp_correction",
+    "code_variance",
+    "carrier_variance",
+    "car_mp_correction",
+    "clk_bias",
+    "clk_drift"
+  ],
+  "classes": [
+    0,
+    1
+  ],
+  "class_names": [
+    "AUTHENTIC",
+    "MANIPULATED"
+  ]
+}
